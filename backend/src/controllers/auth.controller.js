@@ -52,7 +52,8 @@ export const signup = async (req, res) => {
           ENV.CLIENT_URL,
         );
       } catch (error) {
-        res.status(400).json({ message: "Invalid user data" });
+        // res.status(400).json({ message: "Invalid user data" });
+        console.log("Error while sending welcome email");
       }
     } else {
       res.status(400).json({ message: "Invalid user data" });
