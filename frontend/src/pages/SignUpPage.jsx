@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useAuthStore } from "../store/useAuthStore";
-import BoarderAnimatedContainer from "../components/BoarderAnimatedContainer";
+import BorderAnimatedContainer from "../components/BorderAnimatedContainer";
 import {
   MessageCircleIcon,
   LockIcon,
@@ -25,7 +25,7 @@ function SignUpPage() {
   return (
     <div className="w-full flex items-center justify-center p-4 bg-slate-900">
       <div className="relative w-full max-w-6xl md:h-[800px] h-[650px]">
-        <BoarderAnimatedContainer>
+        <BorderAnimatedContainer>
           <div className="w-full flex flex-col md:flex-row">
             {/* FORM COLUMN - LEFT SIDE */}
             <div className="md:w-1/2 p-8 flex items-center justify-center md:border-r border-slate-600/30">
@@ -79,7 +79,7 @@ function SignUpPage() {
                   <div>
                     <label className="auth-input-label">Password</label>
                     <div className="relative">
-                      <UserIcon className="auth-input-icon" />
+                      <LockIcon className="auth-input-icon" />
                       <input
                         type="password"
                         value={formData.password}
@@ -135,7 +135,7 @@ function SignUpPage() {
               </div>
             </div>
           </div>
-        </BoarderAnimatedContainer>
+        </BorderAnimatedContainer>
       </div>
     </div>
   );
